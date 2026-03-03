@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="590.0" prefHeight="590.0" prefWidth="347.0" style="-fx-background-color: FFFCF7;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carper.bookup.controller.NewBookToReadController">
+    <top>
+        <ToolBar nodeOrientation="RIGHT_TO_LEFT" style="-fx-background-color: transparent;">
+            <Button onAction="#cancel" style="-fx-background-color: trabsparent;">
+            <graphic>
+               <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@icons/x.png" />
+                  </image>
+               </ImageView>
+            </graphic></Button>
+         <padding>
+            <Insets bottom="20.0" left="16.0" right="16.0" />
+         </padding>
+        </ToolBar>
+    </top>
+    <center>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="570.0" prefWidth="345.0" style="-fx-background-color: FFFCF7;" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+         <content>
+              <VBox alignment="CENTER" prefHeight="640.0" prefWidth="316.0" spacing="18.0" style="-fx-background-color: FFFCF7;">
+               <VBox maxWidth="280.0">
+                  <children>
+                     <Label minWidth="280.0" text="New Book" textFill="#36312d">
+                        <font>
+                           <Font name="DM Sans Bold" size="36.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="-10.0" />
+                        </VBox.margin>
+                     </Label>
+                     <Label minWidth="280.0" text="to Read" textFill="#fde36d">
+                        <font>
+                           <Font name="DM Sans Bold" size="36.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+               <VBox maxWidth="280.0" prefWidth="300.0" spacing="8.0">
+                  <children>
+                     <Label text="Title *" textFill="#36312d">
+                        <font>
+                           <Font name="DM Sans Medium" size="14.0" />
+                        </font>
+                     </Label>
+                        <TextField fx:id="titleField" minHeight="32.0" promptText="Title" style="-fx-background-color: #FFFEFC; -fx-border-color: #726E6A; -fx-background-radius: 5; -fx-border-radius: 5;" />
+                  </children>
+               </VBox>
+               <VBox maxWidth="280.0" spacing="8.0">
+                  <children>
+                     <Label text="Author *" textFill="#36312d">
+                        <font>
+                           <Font name="DM Sans Medium" size="14.0" />
+                        </font>
+                     </Label>
+                        <TextField fx:id="authorField" minHeight="32.0" promptText="Author" style="-fx-background-color: #FFFEFC; -fx-border-color: #726E6A; -fx-background-radius: 5; -fx-border-radius: 5;" />
+                  </children>
+               </VBox>
+               <VBox maxWidth="280.0" spacing="8.0">
+                  <children>
+                     <Label text="Publication Year" textFill="#36312d">
+                        <font>
+                           <Font name="DM Sans Medium" size="14.0" />
+                        </font>
+                     </Label>
+                        <TextField fx:id="pubYearField" minHeight="32.0" promptText="Publication Year (optional)" style="-fx-background-color: #FFFEFC; -fx-border-color: #726E6A; -fx-background-radius: 5; -fx-border-radius: 5;" />
+                  </children>
+               </VBox>
+               <VBox maxWidth="280.0" spacing="8.0">
+                  <children>
+                     <Label text="Cover Path" textFill="#36312d">
+                        <font>
+                           <Font name="DM Sans Medium" size="14.0" />
+                        </font>
+                     </Label>
+                        <TextField fx:id="coverField" minHeight="32.0" promptText="Cover Image Path (optional)" style="-fx-background-color: #FFFEFC; -fx-border-color: #726E6A; -fx-background-radius: 5; -fx-border-radius: 5;" />
+                  </children>
+               </VBox>
+               <HBox alignment="CENTER" maxWidth="280.0" spacing="11.0">
+                  <children>
+                     <VBox maxWidth="120.0" spacing="8.0">
+                        <children>
+                              <Label text="Genres:" textFill="#36312d">
+                              <font>
+                                 <Font name="DM Sans Medium" size="14.0" />
+                              </font>
+                           </Label>
+                            <ListView fx:id="genresList" maxHeight="120.0" minHeight="120.0" prefHeight="120.0" prefWidth="283.0" style="-fx-border-color: #726E6A; -fx-background-radius: 5; -fx-border-radius: 5; -fx-background-color: #FFFEFC;" />
+                        </children>
+                     </VBox>
+                     <Separator orientation="VERTICAL" prefHeight="200.0" />
+                        <CheckBox fx:id="favoriteCheck" maxWidth="120.0" text="Mark as Favorite" />
+                  </children>
+               </HBox>
+               <VBox maxWidth="280.0" spacing="8.0">
+                  <children>
+                        <Label text="Your notes" textFill="#36312d">
+                        <font>
+                           <Font name="DM Sans Medium" size="14.0" />
+                        </font>
+                     </Label>
+                        <TextArea fx:id="reasonArea" maxWidth="280.0" minHeight="150.0" promptText="Add yout notes here..." style="-fx-background-color: #FFFEFC; -fx-border-color: #726E6A; -fx-background-radius: 5; -fx-border-radius: 5;" />
+                  </children>
+               </VBox>
+                  <Button minHeight="40.0" onAction="#saveBook" prefWidth="95.0" style="-fx-background-color: #B4DBAC; -fx-background-radius: 5;" text="Save Book">
+                  <font>
+                     <Font name="DM Sans Medium" size="12.0" />
+                  </font>
+               </Button>
+              </VBox>
+         </content>
+         <padding>
+            <Insets bottom="20.0" left="16.0" right="16.0" />
+         </padding>
+      </ScrollPane>
+    </center>
+   <padding>
+      <Insets bottom="20.0" top="20.0" />
+   </padding>
+</BorderPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="navbar" alignment="CENTER" prefHeight="60.0" prefWidth="360.0" spacing="30.0" style="-fx-background-color: #36312D; -fx-background-radius: 15 15 0 0; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 6, 0, 0, -2);" xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carper.bookup.controller.NavbarController">
+
+    <children>
+        <Button contentDisplay="TOP" graphicTextGap="1.0" onAction="#goHome" style="-fx-background-color: transparent;" text="Home" textFill="#fffcf7">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="24.0" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/home-filled.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <font>
+            <Font name="DM Sans Medium" size="10.0" />
+         </font>
+        </Button>
+
+        <Button contentDisplay="TOP" graphicTextGap="1.0" onAction="#goToLibrary" style="-fx-background-color: transparent;" text="Library" textFill="#fffcf7">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="24.0" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/library-filled.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <font>
+            <Font name="DM Sans Medium" size="10.0" />
+         </font>
+        </Button>
+
+        <Button contentDisplay="TOP" graphicTextGap="1.0" onAction="#goToAddBook" style="-fx-background-color: transparent;" text="Add New" textFill="#fffcf7">
+            <graphic>
+                <ImageView fitHeight="24.0" fitWidth="24.0" preserveRatio="true">
+                    <image>
+                        <Image url="@icons/book-plus-filled.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <font>
+            <Font name="DM Sans Medium" size="10.0" />
+         </font>
+        </Button>
+    </children>
+</HBox>

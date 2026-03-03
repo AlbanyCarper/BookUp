@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<!-- This is just a Mockup view. Sorry :( -->
+<BorderPane maxWidth="347.0" prefHeight="600.0" style="-fx-background-color: FFFCF7;" xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carper.bookup.controller.HomeController">
+
+   <top>
+      <VBox alignment="CENTER_LEFT" style="-fx-background-color: transparent;" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <Label text="BookUp" textFill="#a2d298">
+               <font>
+                  <Font name="DM Sans Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </top>
+
+   <center>
+      <ScrollPane hbarPolicy="NEVER" maxHeight="475.0" maxWidth="345.0" prefWidth="345.0" style="-fx-background-color: #FFFCF7;" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+         <content>
+            <VBox alignment="CENTER" prefWidth="316.0" spacing="18.0" style="-fx-background-color: FFFCF7;">
+               <padding>
+                  <Insets bottom="0.0" left="0.0" right="0.0" top="20.0" />
+               </padding>
+               <children>
+                  <VBox maxWidth="280.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <children>
+                        <Label text="Hi there," textFill="#36312d">
+                           <font>
+                              <Font name="DM Sans Medium" size="36.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="-10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Reader" textFill="#a2d298">
+                           <font>
+                              <Font name="DM Sans Medium" size="36.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+
+                  <VBox alignment="CENTER" maxWidth="280.0" prefWidth="280.0" spacing="16.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="30.0" style="-fx-background-color: #FFFDF9;">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Text fill="#36312d" text="Keep on reading">
+                                       <font>
+                                          <Font name="DM Sans Medium" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#726e6a" text="Your current books">
+                                       <font>
+                                          <Font name="DM Sans Medium" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <Region prefHeight="25.0" prefWidth="147.0" HBox.hgrow="ALWAYS" />
+                              <Button mnemonicParsing="false" prefWidth="32.0" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@icons/arrow-right.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" maxWidth="280.0" prefWidth="280.0" style="-fx-background-color: #FFFDF9;" vbarPolicy="NEVER">
+                           <content>
+                              <HBox prefHeight="190.0" spacing="14.0" style="-fx-background-color: #FFFDF9;">
+                                 <children>
+
+                                    <!-- Book 2 -->
+                                    <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFFDF9;">
+                                       <children>
+                                          <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@assets/mnl-cover.png" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets bottom="4.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label text="The Midnight Library" textFill="#36312d">
+                                             <font>
+                                                <Font name="DM Sans Medium" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="by Matt Haig">
+                                             <font>
+                                                <Font name="DM Sans Regular" size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #FFFDF9;">
+                                       <children>
+                                          <ImageView fitHeight="150.0" fitWidth="100.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@assets/faro-cover.png" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets bottom="4.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label text="To the Lighthouse" textFill="#36312d">
+                                             <font>
+                                                <Font name="DM Sans Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="by Virginia Woolf">
+                                             <font>
+                                                <Font name="DM Sans Regular" size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+
+                  <VBox maxWidth="280.0" spacing="16.0" style="-fx-background-color: #FFFDF9;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="30.0" style="-fx-background-color: #FFFDF9;">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <Text fill="#36312d" text="Top Genres">
+                                       <font>
+                                          <Font name="DM Sans Medium" size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#726e6a" text="From your most loved stories">
+                                       <font>
+                                          <Font name="DM Sans Medium" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <Region prefHeight="25.0" prefWidth="107.0" HBox.hgrow="ALWAYS" />
+                              <Button mnemonicParsing="false" prefWidth="32.0" style="-fx-background-color: transparent;">
+                                 <graphic>
+                                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@icons/arrow-right.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <ScrollPane hbarPolicy="NEVER" maxWidth="280.0" prefHeight="200.0" prefWidth="280.0" style="-fx-background-color: #FFFDF9;" vbarPolicy="NEVER">
+                           <content>
+                              <HBox alignment="CENTER_LEFT" prefHeight="130.0" prefWidth="280.0" spacing="18.0" style="-fx-background-color: #FFFDF9;">
+                                 <children>
+                                    <VBox alignment="TOP_CENTER" prefHeight="130.0" style="-fx-background-color: #FFFDF9;">
+                                       <children>
+                                          <ImageView fitHeight="70.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Classic.png" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets bottom="4.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label text="Classics" textFill="#36312d">
+                                             <font>
+                                                <Font name="DM Sans Regular" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+
+                                    <VBox alignment="TOP_CENTER" prefHeight="130.0" style="-fx-background-color: transparent;">
+                                       <children>
+                                          <ImageView fitHeight="70.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Romance.png" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets bottom="4.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label text="Romance" textFill="#36312d">
+                                             <font>
+                                                <Font name="DM Sans Regular" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+
+                                    <VBox alignment="TOP_CENTER" prefHeight="130.0">
+                                       <children>
+                                          <ImageView fitHeight="70.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@icons/Historical.png" />
+                                             </image>
+                                             <VBox.margin>
+                                                <Insets bottom="4.0" />
+                                             </VBox.margin>
+                                          </ImageView>
+                                          <Label text="Historical" textFill="#36312d">
+                                             <font>
+                                                <Font name="DM Sans Regular" size="12.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+
+               </children>
+            </VBox>
+         </content>
+         <padding>
+            <Insets left="16.0" right="16.0" />
+         </padding>
+      </ScrollPane>
+   </center>
+
+   <!-- Navbar -->
+   <bottom>
+      <fx:include source="navbar.fxml" />
+   </bottom>
+
+   <padding>
+      <Insets top="20.0" />
+   </padding>
+</BorderPane>

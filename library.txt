@@ -1,0 +1,24 @@
+BookRead;The Garden of Eden;Ernest Hemingway;1986;com/carper/bookup/assets/eden-cover.png;Fiction;false;2019;8;A haunting exploration of gender and identity—very different from his other works.
+BookRead;Frankenstein;Mary Shelley;1818;com/carper/bookup/assets/frankenstein-cover.png;Gothic,Science Fiction;true;2021;10;Dark, philosophical, and deeply human—far beyond the 'monster' cliché.
+BookRead;Emma;Jane Austen;1815;com/carper/bookup/assets/emma-cover.png;Romance,Classic;false;2022;7;Charming and witty—Emma’s character growth really stayed with me.
+BookRead;The Picture of Dorian Gray;Oscar Wilde;1890;com/carper/bookup/assets/dorian-cover.png;Philosophical Fiction,Gothic;true;2022;9;Seductive and eerie—Wilde's prose is as sharp as his wit.
+BookRead;Venus in Furs;Leopold von Sacher-Masoch;1870;com/carper/bookup/assets/venus-cover.png;Erotic,Classic;false;2021;6;A provocative look at desire and power—uncomfortable but fascinating.
+BookRead;Little Women;Louisa May Alcott;1868;com/carper/bookup/assets/women-cover.png;Coming-of-Age,Classic;true;2022;7;Timeless warmth and wisdom—I felt like I grew up with the March sisters... A bit disappointing at the end, I wanted Jo to be a writer not a mother and a teacher.
+BookRead;Candide;Voltaire;1759;com/carper/bookup/assets/candide-cover.png;Satire,Philosophy;false;2021;6;Bitingly funny and surprisingly relevant—a short read that lingers.
+BookRead;Madame Bovary;Gustave Flaubert;1856;com/carper/bookup/assets/bovary-cover.png;Realism,Classic;false;2022;5;Painfully precise—Emma’s longing feels tragically real.
+BookRead;The Lady of the Camellias;Alexandre Dumas fils;1848;com/carper/bookup/assets/lady-cover.png;Romance,Tragedy;true;2022;8;Heartbreaking love and sacrifice—made me think of La Traviata.
+BookRead;Carmilla;J. Sheridan Le Fanu;1872;com/carper/bookup/assets/carmilla-cover.png;Gothic,Horror;false;2022;5;Atmospheric and eerie—an early vampire tale with strong tension and allure.
+BookRead;Andersen’s Fairy Tales;Hans Christian Andersen;1835;com/carper/bookup/assets/andersen-cover.png;Fairy Tales;false;2022;7;Melancholic, beautiful tales—so much more depth than I remembered.
+BookRead;1984;George Orwell;1949;com/carper/bookup/assets/1984-cover.png;Dystopian,Political;false;2024;9;Unnerving and brilliant, a chilling mirror to our world... And a bit re-traumatising for those who have left a totalitarian country. I would read it again.
+BookToRead;Far from the Madding Crowd;Thomas Hardy;1874;com/carper/bookup/assets/madding-cover.png;Pastoral,Classic;false;I want to read this.
+BookCurrent;The Midnigth Library;Matt Haig;2020;com/carper/bookup/assets/mnl-cover.png;Fantasy;false;This with take a while, because is in german.
+BookToRead;Anna Karenina;Leo Tolstoy;1877;com/carper/bookup/assets/annak-cover.png;Classic,Russian Literature;true;A tragic and profound exploration of love, fidelity, and society.
+BookToRead;Anne of Green Gables;L. M. Montgomery;1908;com/carper/bookup/assets/annie-cover.png;Coming-of-Age,Classic;true;Joyful and touching—Anne’s imagination lights up the world.
+BookToRead;Crime and Punishment;Fyodor Dostoevsky;1866;com/carper/bookup/assets/crime-cover.png;Psychological Fiction,Classic;true;Dark, philosophical, and gripping—a true masterpiece of guilt and redemption.
+BookToRead;Animal Farm;George Orwell;1945;com/carper/bookup/assets/farm-cover.png;Political Satire,Dystopia;true;Sharp, allegorical, and terrifyingly relevant even today.
+BookToRead;The Great Gatsby;F. Scott Fitzgerald;1925;com/carper/bookup/assets/gatsby-cover.png;Classic,Modernism;true;A glittering critique of the American Dream—elegant and hollow.
+BookToRead;Wuthering Heights;Emily Brontë;1847;com/carper/bookup/assets/hills-cover.png;Gothic,Romance;true;Wild and haunting—passion turned into a storm.
+BookToRead;A Vindication of the Rights of Woman;Mary Wollstonecraft;1792;com/carper/bookup/assets/rights-cover.png;Philosophy,Feminism;true;A bold, visionary text that still resonates today.
+BookToRead;The Woman in White;Wilkie Collins;1859;com/carper/bookup/assets/white-cover.png;Mystery,Gothic;true;Tense, twisty and atmospheric—pioneer of the sensation novel.
+BookToRead;Agnes Grey;Anne Brontë;1847;com/carper/bookup/assets/agnes-cover.png;Classic,Feminist Literature;true;Quietly powerful—a voice of integrity and restraint.
+BookCurrent;To the Lighthouse;Virginia Woolf;1927;com/carper/bookup/assets/faro-cover.png;Fiction;false;Has waited long

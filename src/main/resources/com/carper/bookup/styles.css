@@ -1,0 +1,15 @@
+.toggle-button {
+    -fx-background-color: #FFFEFC;
+    -fx-border-color: #726e6a;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-text-fill: #36312d;
+    -fx-font-size: 14px;
+    -fx-font-family: "DM Sans Medium";
+}
+
+.toggle-button:selected {
+    -fx-border-color: none;
+    -fx-background-color: #F8B8D1;
+    -fx-text-fill: #36312d;
+}

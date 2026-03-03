@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxWidth="347.0" minWidth="347.0" prefHeight="605.0" prefWidth="347.0" style="-fx-background-color: #FFFcf7;" xmlns="http://javafx.com/javafx/22.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carper.bookup.controller.BookDetailsController">
+
+    <top>
+        <ToolBar style="-fx-background-color: transparent;">
+            <Button onAction="#goBack" style="-fx-background-color: transparent;">
+                <graphic>
+                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@icons/arrow-left.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+
+            <Region HBox.hgrow="ALWAYS" />
+
+            <Button onAction="#editBook" style="-fx-background-color: transparent;">
+                <graphic>
+                    <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@icons/edit-2.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+         <padding>
+            <Insets bottom="20.0" left="16.0" right="16.0" />
+         </padding>
+        </ToolBar>
+    </top>
+
+    <center>
+        <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" maxWidth="345.0" minWidth="345.0" prefWidth="345.0" style="-fx-background-color: transparent;" vbarPolicy="NEVER" BorderPane.alignment="CENTER">
+
+            <content>
+                 <VBox alignment="TOP_CENTER" maxWidth="316.0" minWidth="316.0" prefWidth="316.0" spacing="20.0" style="-fx-background-color: #FFFcf7;">
+
+                     <!-- Cover -->
+                     <ImageView fx:id="coverImage" fitWidth="200.0" preserveRatio="true" />
+
+                     <!-- Title, author, year -->
+                     <VBox alignment="CENTER" maxWidth="280.0" prefWidth="280.0">
+                         <Label fx:id="titleLabel" textFill="#36312d" wrapText="true">
+                             <font>
+                        <Font name="DM Sans Bold" size="18.0" />
+                     </font>
+                         </Label>
+                         <Label fx:id="authorLabel" textFill="#726e6a">
+                             <font>
+                        <Font name="DM Sans Medium" size="14.0" />
+                     </font>
+                         </Label>
+                         <Label fx:id="yearLabel" textFill="#726e6a">
+                             <font>
+                        <Font name="DM Sans Regular" size="11.0" />
+                     </font>
+                         </Label>
+                     </VBox>
+               <Label fx:id="yearReadLabel" style="-fx-background-color: C3B1D7; -fx-background-radius: 4;" text="yearRead" textFill="#36312d">
+                  <font>
+                     <Font name="DM Sans Medium" size="12.0" />
+                  </font>
+                  <padding>
+                     <Insets bottom="4.0" left="8.0" right="8.0" top="4.0" />
+                  </padding>
+               </Label>
+
+                     <Separator maxWidth="280.0" prefWidth="280.0" />
+
+                     <!-- Rating and genre -->
+                     <HBox alignment="CENTER" maxWidth="280.0" spacing="12.0">
+                         <Label fx:id="ratingLabel" textFill="#36312d">
+                             <graphic>
+                                 <ImageView fitHeight="12.0" fitWidth="12.0" preserveRatio="true">
+                                     <image>
+                                         <Image url="@icons/star.png" />
+                                     </image>
+                                 </ImageView>
+                             </graphic>
+                             <font>
+                        <Font name="DM Sans Regular" size="14.0" />
+                     </font>
+                         </Label>
+                         <Separator orientation="VERTICAL" prefHeight="15.0" prefWidth="9.0" />
+                         <Label fx:id="genreLabel" textFill="#36312d">
+                             <font>
+                        <Font name="DM Sans Regular" size="14.0" />
+                     </font>
+                         </Label>
+                     </HBox>
+
+                     <Separator maxWidth="280.0" prefWidth="280.0" />
+
+                     <!-- Status and Favorite -->
+                     <HBox alignment="CENTER" maxWidth="280.0" prefWidth="280.0" spacing="12.0">
+
+                         <Label fx:id="statusLabel" alignment="CENTER" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: B4DBAC; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Status" textFill="#36312d">
+                             <font>
+                                <Font name="DM Sans Medium" size="14.0" />
+                             </font>
+                         </Label>
+
+                         <Button fx:id="favoriteButton" prefHeight="50.0" prefWidth="140.0" style="-fx-background-color: #FFFEFC; -fx-background-radius: 10px; -fx-border-color: #36312d; -fx-border-radius: 10px;" text="Favorite" textFill="#36312d">
+                             <graphic>
+                                 <ImageView fx:id="favoriteIcon" fitHeight="18.0" fitWidth="24.0" preserveRatio="true" />
+                             </graphic>
+
+                             <font>
+                                 <Font name="DM Sans Medium" size="14.0" />
+                             </font>
+                         </Button>
+
+                     </HBox>
+
+                     <!-- Notes -->
+                     <VBox alignment="CENTER_LEFT" maxWidth="280.0" prefWidth="280.0" spacing="8.0">
+                         <Label fx:id="notesLabel" text="Your Notes:" textFill="#36312d" visible="false">
+                             <font>
+                        <Font name="DM Sans Medium" size="16.0" />
+                     </font>
+                         </Label>
+                          <TextArea fx:id="notesArea" editable="false" minHeight="150.0" style="-fx-background-color: #FFFcf7; -fx-background-radius: 5;" text="notesArea" visible="true" wrapText="true">
+                              <font>
+                        <Font name="DM Sans" size="12.0" />
+                     </font>
+                          </TextArea>
+                     </VBox>
+
+                 </VBox>
+            </content>
+         <padding>
+            <Insets bottom="20.0" left="16.0" right="16.0" />
+         </padding>
+        </ScrollPane>
+    </center>
+   <padding>
+      <Insets bottom="20.0" top="20.0" />
+   </padding>
+
+
+</BorderPane>
